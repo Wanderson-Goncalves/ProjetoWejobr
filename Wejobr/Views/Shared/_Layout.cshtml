@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Wejobr</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <a class="navbar-brand" href="#"><img src="~/css/imagens1/Wejobr-Logo-full_preto.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="btn btn-warning" href="#">Candidato <span class="sr-only">(Página atual)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning" href="#">Empresas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning" href="#">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning" href="#">Entrar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-warning" href="#">Cadastrar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div><img src="~/css/imagens1/nav.png" alt=""></div>
+            <div>
+                <p>"Sou um ser e não uma coisa, ainda que eu fosse uma coisa, não seria a sem valor! Sou movido a deixar a minha terra, aquela terra de origem, pátria amada, que um dia nme viu nascer, me viu crescer, me viu sorrir. Sorrir para a vida. -Vida, o grandioso presente de Deus para as nações!.."</p>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="pt-4 my-md-5 pt-md-5 d-flex justify-content-center footer1">
+        <div class="row container">
+            <div class="col-12 col-md">
+                <a href="index.html"><img class="mb-2" src="Imagens1/Wejobr-Logo-full_preto.svg" alt="" width="60vh"></a>
+                <small class="d-block mb-3 text-muted">© 2021. Todos os direitos reservados.</small>
+                <small class="d-block mb-3 text-muted">Desenvolvido por Squad 22</small>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Site</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="index.html">Home</a></li>
+                    <li><a class="text-muted" href="#">Candidato</a></li>
+                    <li><a class="text-muted" href="#">Empresas</a></li>
+                    <li><a class="text-muted" href="vagas.html">Vagas</a></li>
+                    <li><a class="text-muted" href="sobre.html">Sobre</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Candidato</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Cadastrar</a></li>
+                    <li><a class="text-muted" href="#">Entrar</a></li>
+                    <li><a class="text-muted" href="#">Cadastrar Currículo</a></li>
+                    <li><a class="text-muted" href="#">Vagas</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Empresas</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">Área da Empresa</a></li>
+                    <li><a class="text-muted" href="#">Cadastrar Empresa</a></li>
+                    <li><a class="text-muted" href="#">Cadastrar Recrutador</a></li>
+                    <li><a class="text-muted" href="#">Cadastrar Vagas</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md">
+                <h5>Contato</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted">Telefone: (99) 99999-9999</a></li>
+                    <li><a class="text-muted">E-mail: contato@wejobr.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
