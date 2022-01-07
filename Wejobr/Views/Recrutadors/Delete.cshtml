@@ -1,0 +1,75 @@
+﻿@model Wejobr.Models.Recrutador
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete</h1>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Recrutador</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome_empresa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome_empresa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Id_empresa)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Id_empresa)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nome_recrutador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nome_recrutador)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Cargo_recrutador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Cargo_recrutador)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Departamento_recrutador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Departamento_recrutador)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Email_recrutador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Email_recrutador)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Tel_recrutador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Tel_recrutador)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Contato2_recrutador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Contato2_recrutador)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Senha_recrutador)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Senha_recrutador)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id_recrutador" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

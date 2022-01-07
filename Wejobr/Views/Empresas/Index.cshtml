@@ -1,0 +1,71 @@
+﻿@model IEnumerable<Wejobr.Models.Empresa>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Cod_vaga)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome_empresa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cnpj_empresa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cep_empresa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Ramo_empresa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefone_empresa)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Linkedin_empresa)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cod_vaga)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome_empresa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cnpj_empresa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cep_empresa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ramo_empresa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone_empresa)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Linkedin_empresa)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id_empresa">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id_empresa">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id_empresa">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

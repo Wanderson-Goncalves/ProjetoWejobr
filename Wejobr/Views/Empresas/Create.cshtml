@@ -1,0 +1,63 @@
+﻿@model Wejobr.Models.Empresa
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Empresa</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Cod_vaga" class="control-label"></label>
+                <input asp-for="Cod_vaga" class="form-control" />
+                <span asp-validation-for="Cod_vaga" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Nome_empresa" class="control-label"></label>
+                <input asp-for="Nome_empresa" class="form-control" />
+                <span asp-validation-for="Nome_empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cnpj_empresa" class="control-label"></label>
+                <input asp-for="Cnpj_empresa" class="form-control" />
+                <span asp-validation-for="Cnpj_empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cep_empresa" class="control-label"></label>
+                <input asp-for="Cep_empresa" class="form-control" />
+                <span asp-validation-for="Cep_empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Ramo_empresa" class="control-label"></label>
+                <input asp-for="Ramo_empresa" class="form-control" />
+                <span asp-validation-for="Ramo_empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Telefone_empresa" class="control-label"></label>
+                <input asp-for="Telefone_empresa" class="form-control" />
+                <span asp-validation-for="Telefone_empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Linkedin_empresa" class="control-label"></label>
+                <input asp-for="Linkedin_empresa" class="form-control" />
+                <span asp-validation-for="Linkedin_empresa" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

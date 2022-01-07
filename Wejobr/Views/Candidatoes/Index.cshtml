@@ -1,0 +1,95 @@
+﻿@model IEnumerable<Wejobr.Models.Candidato>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Nome_candidato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nascimento_candidato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado_civil_candidato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nacionalidade_candidato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Rne_candidato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Idioma_candidato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Email_candidato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Senha_candidato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cargo1_candidato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cargo2_candidato)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Cargo3_candidato)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome_candidato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nascimento_candidato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado_civil_candidato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nacionalidade_candidato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Rne_candidato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Idioma_candidato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email_candidato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Senha_candidato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cargo1_candidato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cargo2_candidato)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Cargo3_candidato)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id_candidato">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id_candidato">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id_candidato">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
