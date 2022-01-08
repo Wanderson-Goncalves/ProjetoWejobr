@@ -375,3 +375,4 @@ C:\Users\Casa\Desktop\Estudos\Recode\Trabalho Site Wejobr\Git\Wejobr\obj\Debug\n
 C:\Users\Casa\Desktop\Estudos\Recode\Trabalho Site Wejobr\Git\Wejobr\obj\Debug\net5.0\ref\Wejobr.dll
 C:\Users\Casa\Desktop\Estudos\Recode\Trabalho Site Wejobr\Git\Wejobr\obj\Debug\net5.0\Wejobr.pdb
 C:\Users\Casa\Desktop\Estudos\Recode\Trabalho Site Wejobr\Git\Wejobr\obj\Debug\net5.0\Wejobr.genruntimeconfig.cache
+C:\Users\Casa\Desktop\Estudos\Recode\Trabalho Site Wejobr\Git\Wejobr\obj\Debug\net5.0\Razor\Views\ParaEmpresas.cshtml.g.cs

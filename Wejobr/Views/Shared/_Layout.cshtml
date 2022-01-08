@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Wejobr</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
+    <link rel="stylesheet" href="~/css/empresas.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+
 </head>
 <body>
 
@@ -21,7 +26,7 @@
                         <a class="btn btn-warning" href="#">Candidato <span class="sr-only">(Página atual)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn btn-warning" href="#">Empresas</a>
+                        <a class="btn btn-warning" asp-action="ParaEmpresas">Empresas</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-warning" href="#">Sobre</a>
@@ -97,5 +102,8 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="~/js/carrossel.js"></script>
 </body>
 </html>
