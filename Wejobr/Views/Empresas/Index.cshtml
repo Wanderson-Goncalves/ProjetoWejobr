@@ -3,69 +3,156 @@
 @{
     ViewData["Title"] = "Index";
 }
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
 
-<h1>Index</h1>
+    <link rel="stylesheet" href="~/css/empresas.css" />
+@{
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Cod_vaga)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Nome_empresa)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cnpj_empresa)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Cep_empresa)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Ramo_empresa)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Telefone_empresa)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Linkedin_empresa)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cod_vaga)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Nome_empresa)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cnpj_empresa)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Cep_empresa)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ramo_empresa)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Telefone_empresa)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Linkedin_empresa)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id_empresa">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id_empresa">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id_empresa">Delete</a>
-            </td>
-        </tr>
 }
-    </tbody>
-</table>
+ <main>
+        <section class="container  mt-3">
+            <figure class="d-flex">
+                <figcaption class="ml-5 mr-4 mt-5 textoDestaqueEmpresa">
+                    <p class="text-right align-middle ml-5">Traga mais diversidade para o ambiente de trabalho da sua
+                        empesa,
+                        com
+                        pessoas que
+                        demostram alto grau de
+                        motivação com trajetórias, qualificações e experiências, que podem colaborar com o desempenho da
+                        sua
+                        empresa.
+                    </p>
+                </figcaption>
+                <img class="sombra" src="Imagens/tabalhadores-3.jpg" width="301px" height="350px" alt="">
+
+            </figure>
+
+        </section>
+
+        <section class="container mt-3 pb-16 corFundo">
+            <figure class=" imagemFlutuante ">
+                <img class="sombra" src="Imagens/trabalahadores-1.jpg" width="526" height="318" alt="">
+            </figure>
+        </section>
+
+        <section class="container fundoImagemFlutuante">
+            <div class="container d-flex align-items-end">
+                <div class="areaPublicidade ">
+                    <p>Aqui fica a área da publicidade</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container mt-3 mb-3">
+            <div class="row justify-content-center">
+                <div class="col-6 row  justify-content-end btn-empresa  pr-0 mr-1">
+                    <a href="#" class="text-center botaoEstilo active" role="button" aria-pressed="true">INCLUIR
+                        VAGAS <span>list_alt</span></a>
+                </div>
+                <div class="col-6 btnEmpresa ml-1">
+                    <a href="#" class="text-center botaoEstilo  active " role="button"
+                        aria-pressed="true"><span>search</span>BUSCAR CURRICULO
+                    </a>
+                </div>
+                <div class="btnEmpresa">
+                    <a href="#" class="botaoEstilo text-center active" role="button" aria-pressed="true">CADASTRAR SUA
+                        EMPRESA <span></span></a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="container noticias">
+            <div>
+                <h2 class="tituloNoticias">Notícias</h2>
+            </div>
+
+            <div class="card-deck">
+
+                <div class="card sombra mb-2">
+                    <img class="card-img-top" src="Imagens/ImagemNoticia.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title cards-titulos-noticias">Contratar refugiados pode ser um bom negócio.</h5>
+                        <p class="card-text"><small class="text-muted">Saiba por quê</small></p>
+                        <a
+                            href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                            <p class="card-text card-paragrafo-noticias">Todo refugiado — ou estrangeiro que formalizou
+                                o pedido de refúgio —
+                                tem
+                                assegurado o direito de trabalhar legalmente no Brasil. <br>
+                                Diante da chance de reconstruir a vida no país, eles costumam demonstrar alto grau de
+                                motivação e esforço para entrar no mercado — seja como empregado ou como empreendedor.
+                            </p>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="card sombra mb-2">
+                    <img class="card-img-top" src="Imagens/ImagemNoticia.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title cards-titulos-noticias">Contratar refugiados pode ser um bom negócio.
+                        </h5>
+                        <p class="card-text"><small class="text-muted">Saiba por quê</small></p>
+                        <a
+                            href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                            <p class="card-text card-paragrafo-noticias">Todo refugiado — ou estrangeiro que formalizou
+                                o pedido de refúgio —
+                                tem
+                                assegurado o direito de trabalhar legalmente no Brasil. <br>
+                                Diante da chance de reconstruir a vida no país, eles costumam demonstrar alto grau de
+                                motivação e esforço para entrar no mercado — seja como empregado ou como empreendedor.
+                            </p>
+                        </a>
+
+
+                    </div>
+                </div>
+                <div class="card sombra mb-2">
+                    <img class="card-img-top" src="Imagens/ImagemNoticia.png" alt="Imagem de capa do card">
+                    <div class="card-body">
+                        <h5 class="card-title cards-titulos-noticias">Contratar refugiados pode ser um bom negócio.
+                        </h5>
+                        <p class="card-text"><small class="text-muted">Saiba por quê</small></p>
+                        <a
+                            href="https://revistapegn.globo.com/Administracao-de-empresas/noticia/2019/07/contratar-refugiados-pode-ser-um-bom-negocio-saiba-por-que.html">
+                            <p class="card-text card-paragrafo-noticias">Todo refugiado — ou estrangeiro que
+                                formalizou o pedido de refúgio —
+                                tem
+                                assegurado o direito de trabalhar legalmente no Brasil. <br>
+                                Diante da chance de reconstruir a vida no país, eles costumam demonstrar alto grau de
+                                motivação e esforço para entrar no mercado — seja como empregado ou como empreendedor.
+                            </p>
+                        </a>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <article class="container c-carousel c-carousel--responsive">
+            
+                 <div>
+                     <h2 class="titulo-noticias">Parceiros</h2>
+                 </div>
+             <div class="c-carousel__slides js-carousel--responsive">
+                 <article class="c-carousel__slide"><img src="Imagens/recode.png" alt=""></article>
+                 <article class="c-carousel__slide"><img src="Imagens/recode.png" alt=""></article>
+                 <article class="c-carousel__slide"><img src="Imagens/recode.png" alt=""></article>
+                 <article class="c-carousel__slide"><img src="Imagens/recode.png" alt=""></article>
+                 <article class="c-carousel__slide"><img src="Imagens/recode.png" alt=""></article>
+                 <article class="c-carousel__slide"><img src="Imagens/recode.png" alt=""></article>
+             </div>
+
+             <button class="js-carousel--responsive-prev" aria-label="Anterior">«</button>
+             <button class="js-carousel--responsive-next" aria-label="Próximo">»</button>
+             <div class="js-carousel--responsive-dots" role="tablist"></div>
+         </article>
+
+    </main>
+
+     <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="~/js/carrossel.js"></script>
