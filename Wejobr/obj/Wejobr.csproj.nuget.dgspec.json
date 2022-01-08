@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Carla\\Desktop\\capel\\Documents\\Recode Pro\\Curso\\Nosso site\\Wejobr\\Wejobr\\Wejobr.csproj": {}
+    "C:\\Users\\Casa\\Desktop\\Estudos\\Recode\\Trabalho Site Wejobr\\Git\\Wejobr\\Wejobr.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Carla\\Desktop\\capel\\Documents\\Recode Pro\\Curso\\Nosso site\\Wejobr\\Wejobr\\Wejobr.csproj": {
+    "C:\\Users\\Casa\\Desktop\\Estudos\\Recode\\Trabalho Site Wejobr\\Git\\Wejobr\\Wejobr.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Carla\\Desktop\\capel\\Documents\\Recode Pro\\Curso\\Nosso site\\Wejobr\\Wejobr\\Wejobr.csproj",
+        "projectUniqueName": "C:\\Users\\Casa\\Desktop\\Estudos\\Recode\\Trabalho Site Wejobr\\Git\\Wejobr\\Wejobr.csproj",
         "projectName": "Wejobr",
-        "projectPath": "C:\\Users\\Carla\\Desktop\\capel\\Documents\\Recode Pro\\Curso\\Nosso site\\Wejobr\\Wejobr\\Wejobr.csproj",
-        "packagesPath": "C:\\Users\\Carla\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Carla\\Desktop\\capel\\Documents\\Recode Pro\\Curso\\Nosso site\\Wejobr\\Wejobr\\obj\\",
+        "projectPath": "C:\\Users\\Casa\\Desktop\\Estudos\\Recode\\Trabalho Site Wejobr\\Git\\Wejobr\\Wejobr.csproj",
+        "packagesPath": "C:\\Users\\Casa\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Casa\\Desktop\\Estudos\\Recode\\Trabalho Site Wejobr\\Git\\Wejobr\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Carla\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Casa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.404\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
